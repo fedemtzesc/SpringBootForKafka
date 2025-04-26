@@ -9,7 +9,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 public class KafkaConsumerListener {
     private Logger LOGGER = LoggerFactory.getLogger(KafkaConsumerListener.class);
 
-    @KafkaListener(topics={"fdx-topic"}, groupId = "my-group-id")
+    @KafkaListener(topics={"tema-1"}, groupId = "my-group-id")
     public void listener(String message){
         LOGGER.info("Mensaje Recibido! El mensaje es: "  + message);
     }

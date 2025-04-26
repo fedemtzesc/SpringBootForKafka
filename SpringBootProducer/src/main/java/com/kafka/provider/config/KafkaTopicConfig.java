@@ -26,11 +26,10 @@ public class KafkaTopicConfig {
         //MAX_MESSAGE_BYTES_CONFIG: Peso o tamanio maximo de cada mensaje en bytes (1Mb por defecto)
         configurations.put(TopicConfig.MAX_MESSAGE_BYTES_CONFIG, "1024");
 
-        return TopicBuilder.name("fdx-topic")
+        return TopicBuilder.name("tema-1")
                 .partitions(2)
                 .replicas(2)
                 .configs(configurations)
                 .build();
-
     }
 }
